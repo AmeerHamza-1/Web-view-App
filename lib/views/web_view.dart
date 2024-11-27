@@ -33,7 +33,6 @@ class _WebViewState extends State<WebView> {
     );
     urlFocusNode.addListener(() {
       if (urlFocusNode.hasFocus) {
-        // Select all text when the TextField gains focus
         urlController.selection = TextSelection(
           baseOffset: 0,
           extentOffset: urlController.text.length,
